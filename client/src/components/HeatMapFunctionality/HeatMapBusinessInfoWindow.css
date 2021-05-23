@@ -1,0 +1,46 @@
+.clip-star {
+    background: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.clip-star-empty {
+    background: lightgrey;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.info-window {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.rating-entry {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 1rem;
+}
+
+.rating-entry-right {
+    display: flex;
+    flex-grow: 1;
+    justify-content: right;
+    margin-left: 1rem;
+}
+
+.rating-entry-title {
+    font-size: 1.5rem;
+}
+
+.rating-entry-numbers {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,50 @@
+version: "3"
+
+services:
+  client:
+    image: client:latest
+    build:
+      context: .
+      dockerfile: ./docker/client/Dockerfile
+
+    restart: always
+    depends_on: [server]
+
+    environment:
+      NODE_ENV: "development"
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - ./client:/app
+
+  server:
+    image: server:latest
+    build:
+      context: .
+      dockerfile: ./docker/server/Dockerfile
+
+    restart: always
+    depends_on: [mongo]
+
+    environment:
+      NODE_ENV: "development"
+    ports:
+      - "127.0.0.1:5000:5000"
+    volumes:
+      - ./server:/app
+
+  mongo:
+    image: mongo
+
+    container_name: mongo
+    restart: always
+    logging:
+      driver: none
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: kMZRGiaKR9q4VxiQ
+    ports:
+      - 127.0.0.1:27017:27017
+    volumes:
+      - ./data/db:/data/db

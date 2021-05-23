@@ -1,0 +1,21 @@
+.report-form {
+    padding: 2%;
+}
+
+.mapForm {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: center;
+}
+
+.mapFormSection {
+    flex-grow: 1;
+    align-items: stretch;
+    margin: 15px;
+}
+
+.text-muted {
+    font-style: italic;
+    color: gray;
+}

@@ -1,0 +1,29 @@
+.header {
+    background: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1%;
+}
+
+.nav-logo {
+    display:flex;
+    height: 50px;
+    width: 50px;
+    padding: 10%;
+}
+
+.nav-items {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 0.5rem
+}

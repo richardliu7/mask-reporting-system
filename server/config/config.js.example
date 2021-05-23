@@ -1,0 +1,12 @@
+//This file holds any configuration variables we may need
+//'config.js' is usually ignored by git to protect sensitive information, such as your database's username and password
+export default {
+    port: 5000,
+    db: {
+        uri: 'mongodb://USER:PASS@SERVER:27017/maskr?authSource=admin', //place the URI of your mongo database here.
+    },
+    passport: {
+        clientID: "GOOGLE_CLIENT_ID_URL",
+        clientSecret: "GOOGLE_CLIENT_SECRET"
+    }
+};
